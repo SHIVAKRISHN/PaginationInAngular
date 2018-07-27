@@ -1,0 +1,16 @@
+<ul>
+    <li *ngFor="let item of collection | paginate: { itemsPerPage: 10, currentPage: p }"> {{item.name}} </li>
+  </ul>
+             
+ <!--  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+  <ngb-pagination [collectionSize]="collection.length" [(page)]="p" size="lg"></ngb-pagination> -->
+
+  <ngb-pagination [collectionSize]="collection.length" [pageSize]="10" [(page)]="p" [maxSize]="7" [rotate]="true" ></ngb-pagination>
+
+  <input [(ngModel)]="searchText" placeholder="search text goes here">
+<ul>
+  <li *ngFor="let c of characters | filter : searchText">
+    {{c}}
+  </li>
+</ul>
