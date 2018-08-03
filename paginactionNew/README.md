@@ -31,3 +31,6 @@ Implementation url is ::
 
 
 https://ciphertrick.com/2017/08/01/search-sort-pagination-in-angular/
+
+info about bootstrap icons
+https://stackoverflow.com/a/47692944/7772054
